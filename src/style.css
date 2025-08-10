@@ -1,0 +1,13 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+:root {
+  --navy: #0b132b;
+  --coral: #fb6c5c;
+  --white: #ffffff;
+  --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --ekmtechcolor: #004990;
+  --ekmtechcolor-dark: #003a78;
+}
