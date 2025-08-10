@@ -154,56 +154,45 @@ import TheHeader from './TheHeader.vue';
   background: linear-gradient(to left, transparent 0%, var(--navy) 70%);
   pointer-events: none;
 }
-
 @media screen and (max-width: 768px) {
   .page {
+    position: relative;
     flex-direction: column;
-    height: auto;
-  }
-
-  .branding,
-  .visual {
-    width: 100%;
-    flex: none;
-    height: auto;
+    height: 100vh;
+    background: url('/src/imgs/meninasComCelular.png') no-repeat center center/cover;
+    color: white;
   }
 
   .branding {
-    padding: 3rem 2rem;
-    align-items: center;
-    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 19, 51, 0.4); /* menos escuro pra melhorar visibilidade */
+    padding: 3rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
     gap: 1rem;
-    box-shadow: none;
-  }
-
-  .logo {
-    width: 56px;
-    height: 56px;
-    font-size: 2rem;
-  }
-
-  .branding h1 {
-    font-size: 2.2rem;
-  }
-
-  .info p,
-  .info span {
-    font-size: 1.1rem;
+    box-sizing: border-box;
+    color: var(--white)
   }
 
   .description {
-    max-width: 100%;
-    font-size: 1.15rem;
+    display: none; /* esconde no mobile */
   }
 
-  .cta {
-    margin: 2rem auto 0 auto;
-    align-self: center;
-    padding: 1rem 3.5rem;
-  }
+  /* mantém o restante do estilo pra texto, botão, etc */
 
   .visual {
-    height: 300px;
+    display: none;
+  }
+  p, span{ 
+     color: white
   }
 }
+
 </style>

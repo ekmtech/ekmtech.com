@@ -4,6 +4,6 @@ import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
   plugins: [vue()],
-  base: '/ekmtech.com/', // substitua pelo nome exato do seu repo
+  base: '/ekmtechSite/', // substitua pelo nome exato do seu repo
 });
 
